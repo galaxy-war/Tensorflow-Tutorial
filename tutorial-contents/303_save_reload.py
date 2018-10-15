@@ -17,8 +17,11 @@ np.random.seed(1)
 # fake data
 x = np.linspace(-1, 1, 100)[:, np.newaxis]          # shape (100, 1)
 noise = np.random.normal(0, 0.1, size=x.shape)
-y = np.power(x, 2) + noise                          # shape (100, 1) + some noise
+# y = np.power(x, 2) + noise                          # shape (100, 1) + some noise
+y = np.multiply(x, x) + noise
 
+print("### x is an 100*1 array matrix:", x)
+print("### y is an 100*1 array matrix:", y)
 
 def save():
     print('This is save')

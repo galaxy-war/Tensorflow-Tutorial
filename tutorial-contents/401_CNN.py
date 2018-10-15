@@ -19,7 +19,7 @@ BATCH_SIZE = 50
 LR = 0.001              # learning rate
 
 mnist = input_data.read_data_sets('./mnist', one_hot=True)  # they has been normalized to range (0,1)
-test_x = mnist.test.images[:2000]
+test_x = mnist.test.images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [:2000]
 test_y = mnist.test.labels[:2000]
 
 # plot one example
